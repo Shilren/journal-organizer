@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+*.log
+# 个人状态/凭证（绝不入库）
+config.json
+credentials.json
+seen*.txt
+chats.json
+last_note.json
