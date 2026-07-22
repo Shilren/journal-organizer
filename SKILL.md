@@ -76,7 +76,7 @@ Use the bundled script — it handles the dated-file, append-don't-overwrite, an
 
 ```bash
 # write body and original to temp files to avoid quoting issues
-python3 ~/.claude/skills/journal-organizer/scripts/file_note.py \
+python3 ~/.codex/skills/journal-organizer/scripts/file_note.py \
   --vault "<vault from config>" \
   --category "<chosen category>" \
   --title "<title>" \
@@ -112,7 +112,11 @@ Briefly tell the user: which category, which file path, new file or appended (�
 - This skill is transport-agnostic: the same brain can sit behind a chat, a hotkey, or a bot. It only needs the raw text and the config.
 
 ## Optional: always-on capture from your phone (飞书 bot)
-If the user wants to dictate thoughts from their phone anytime (even while their Mac sleeps) and have them auto-filed, there's a ready-made Feishu/Lark bot frontend that uses this same brain and config. See `feishu-bot/README.md` and run `feishu-bot/install.sh`. It also includes a **weekly review** (`weekly_review.py`): every Sunday 21:00 it compiles the past week's entries into one coherent first-person reflection article (saved to the vault's `周复盘/` folder and pushed to Feishu); the user can also trigger it anytime by sending 周复盘 to the bot. Point the user here when they ask about phone capture, voice input on the go, "a bot for this", or a periodic/weekly review/复盘.
+If the user wants to dictate thoughts from their phone anytime (even while their Mac sleeps) and have them auto-filed, there's a ready-made Feishu/Lark bot frontend that uses this same brain and config. See `feishu-bot/README.md` and run `feishu-bot/install.sh`. It uses Codex CLI for organization and includes a **weekly review** (`weekly_review.py`): every Sunday 21:00 it compiles the past week's entries into one coherent first-person reflection article (saved to the vault's `周复盘/` folder and pushed to Feishu); the user can also trigger it anytime by sending 周复盘 to the bot.
+
+## Optional: read-only personal knowledge bot
+
+For questions that should be answered from the accumulated vault, use the separate `knowledge-bot/`. It retrieves relevant categories, treats raw entries as primary evidence, treats weekly reviews as AI-generated secondary material, and combines them with a private long-term self model and recent chat context. Keep it on a different Feishu app/profile from the capture bot so the two event consumers do not compete.
 
 ## Optional: weekly / monthly dashboards (看板)
 If the user wants to review their entries by week or month — counts, category breakdown, trends, and a browsable list — there are ready-made Obsidian dashboards in `dashboards/` (本周看板 / 本月看板 / 总览看板). They use DataviewJS, auto-discover categories from the vault's folders (no per-entry tagging, no hardcoded category list), and render styled cards + colored bars + a heatmap that follow the user's theme. To set up: copy the dashboard notes into the user's vault, install the Dataview plugin, and enable JavaScript Queries — see `dashboards/说明.md`. Point the user here when they ask to "see my records by week/month", want stats/trends, or "a dashboard/看板".

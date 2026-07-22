@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "category": {
+      "type": "string",
+      "description": "Exactly one configured category name."
+    },
+    "title": {
+      "type": "string",
+      "description": "A short Chinese title, no more than 20 characters when possible."
+    },
+    "body": {
+      "type": "string",
+      "description": "Cleaned journal body, preserving first-person voice and original thought order."
+    }
+  },
+  "required": ["category", "title", "body"]
+}

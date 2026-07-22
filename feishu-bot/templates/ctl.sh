@@ -1,10 +1,11 @@
 #!/bin/bash
 # 想法机器人 一键管理
 # 用法: ~/.journal-bot/ctl.sh [status|start|stop|restart|log]
-LABEL="com.journal-bot"
+LABEL="com.journal-organizer.capture"
 PLIST="$HOME/Library/LaunchAgents/$LABEL.plist"
 DOM="gui/$(id -u)"
-LOG="$HOME/.journal-bot/bot.log"
+BOT_DIR="${JOURNAL_BOT_DIR:-$HOME/.journal-bot}"
+LOG="$BOT_DIR/bot.log"
 
 case "${1:-status}" in
   status)

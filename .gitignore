@@ -7,3 +7,9 @@ credentials.json
 seen*.txt
 chats.json
 last_note.json
+history.json
+kb_index.jsonl
+self_model.md
+*.plist
+__pycache__/
+*.pyc

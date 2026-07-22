@@ -1,0 +1,31 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check Python syntax
+        run: |
+          python -m py_compile \
+            scripts/file_note.py \
+            feishu-bot/templates/handler.py \
+            feishu-bot/templates/weekly_review.py \
+            knowledge-bot/templates/handler.py
+      - name: Check shell syntax
+        run: |
+          bash -n \
+            install-all.sh \
+            feishu-bot/install.sh \
+            knowledge-bot/install.sh \
+            feishu-bot/templates/ctl.sh \
+            knowledge-bot/templates/ctl.sh
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
