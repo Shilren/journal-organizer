@@ -239,10 +239,13 @@ journal-organizer/
 ├── dashboards/                      # Obsidian Dataview 看板
 ├── examples/vault/                  # 匿名示例知识库
 ├── tests/                            # 语法与核心检索测试
-└── docs/PROJECT.md                  # 项目演进、设计决策与路线图
+└── docs/
+    ├── PROJECT.md                   # 项目演进、设计决策与路线图
+    ├── PHILOSOPHY.md                # 价值理念与产品理念
+    └── PERSONAL-CASE-STUDY.md       # 作者的真实双 Bot 使用方式
 ```
 
-更完整的项目总结见 [docs/PROJECT.md](docs/PROJECT.md)，价值与产品理念见 [docs/PHILOSOPHY.md](docs/PHILOSOPHY.md)，飞书配置细节见 [feishu-bot/README.md](feishu-bot/README.md) 和 [knowledge-bot/README.md](knowledge-bot/README.md)。
+更完整的项目总结见 [docs/PROJECT.md](docs/PROJECT.md)，价值与产品理念见 [docs/PHILOSOPHY.md](docs/PHILOSOPHY.md)，作者如何在真实生活里使用两个 Bot 见 [docs/PERSONAL-CASE-STUDY.md](docs/PERSONAL-CASE-STUDY.md)。飞书配置细节见 [feishu-bot/README.md](feishu-bot/README.md) 和 [knowledge-bot/README.md](knowledge-bot/README.md)。
 
 ## License
 

@@ -10,7 +10,7 @@ Journal Organizer 的目标是建立一条低摩擦闭环：
 随手表达 -> 忠实整理 -> 自动归档 -> 周期复盘 -> 个性化检索 -> 再次思考
 ```
 
-更深一层，它希望把“保存自我”和“延续自我”变成两种可以协作的产品能力：Journal Bot 保存未经重写的一手经验，Second Me 让这些经验在新的处境里继续参与判断。完整价值与产品理念见 [PHILOSOPHY.md](PHILOSOPHY.md)。
+更深一层，它希望把“保存自我”和“延续自我”变成两种可以协作的产品能力：Journal Bot 保存未经重写的一手经验，Second Me 让这些经验在新的处境里继续参与判断。完整价值与产品理念见 [PHILOSOPHY.md](PHILOSOPHY.md)，真实个人使用方式见 [PERSONAL-CASE-STUDY.md](PERSONAL-CASE-STUDY.md)。
 
 ## 2. 系统如何演进
 

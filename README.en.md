@@ -98,7 +98,7 @@ The default answer is conversational rather than citation-heavy. The bot disting
 - The knowledge bot opens the vault read-only and runs Codex in a read-only sandbox.
 - Credentials, personal notes, chat history, indexes, logs, and the real self model are excluded from Git.
 
-See [docs/PROJECT.md](docs/PROJECT.md) for the full design history, [docs/PHILOSOPHY.md](docs/PHILOSOPHY.md) for the complete values and product philosophy, [feishu-bot/README.md](feishu-bot/README.md) for capture setup, and [knowledge-bot/README.md](knowledge-bot/README.md) for retrieval configuration.
+See [docs/PROJECT.md](docs/PROJECT.md) for the full design history, [docs/PHILOSOPHY.md](docs/PHILOSOPHY.md) for the complete values and product philosophy, and [docs/PERSONAL-CASE-STUDY.md](docs/PERSONAL-CASE-STUDY.md) for the author's detailed real-world workflow. Capture and retrieval setup live in [feishu-bot/README.md](feishu-bot/README.md) and [knowledge-bot/README.md](knowledge-bot/README.md).
 
 ## License
 
