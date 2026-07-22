@@ -1,5 +1,5 @@
 <!-- 语言: 中文 | [English](README.en.md) -->
-## 核心价值与产品理念见 [docs/PHILOSOPHY.md](个人使用案例和产品价值观.md)，飞书配置细节见 [feishu-bot/README.md](feishu-bot/README.md) 和 [knowledge-bot/README.md](knowledge-bot/README.md)更完整的项目总结见 [docs/PROJECT.md](docs/PROJECT.md)，
+## 核心价值与产品理念见 [个人使用案例和产品价值观.md](docs/PHILOSOPHY.md)，飞书配置细节见 [feishu-bot/README.md](feishu-bot/README.md) 和 [knowledge-bot/README.md](knowledge-bot/README.md)更完整的项目总结见 [docs/PROJECT.md](docs/PROJECT.md)，
 # Journal Organizer
 
 > 把飞书里的随手想法沉淀成一个会持续生长、能够理解你的个人知识系统。
